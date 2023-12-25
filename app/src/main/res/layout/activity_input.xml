@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.InputActivity"
+    android:background="@color/pallete_red_4"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/bt_back_input"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:tint="@color/pallete_red_1"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/pallete_red_3"
+            android:layout_gravity="center_vertical"
+            android:elevation="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input Data"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30dp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/pallete_red_1"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200sp"
+        android:layout_height="240sp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_image_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/upload_image"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/bar_progress_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:visibility="gone"
+        android:progressBackgroundTint="@color/main_purple"
+        android:progressTint="@color/main_purple"
+        android:indeterminateTint="@color/main_purple"
+        android:backgroundTint="@color/main_purple"
+        android:foregroundTint="@color/main_purple"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload an image"
+        android:fontFamily="@font/poppins_semibold"
+        android:textAlignment="center"
+        android:textColor="@color/pallete_red_1"
+        android:textSize="20sp"
+        android:layout_marginBottom="30sp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30sp"
+        android:layout_height="280sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_tittle_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/pallete_red_1"
+                android:backgroundTint="@color/pallete_red_3"
+                android:hint="Movie title"/>
+
+            <EditText
+                android:id="@+id/et_director_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/pallete_red_1"
+                android:backgroundTint="@color/pallete_red_3"
+                android:hint="Directed by"/>
+
+            <EditText
+                android:id="@+id/et_duration_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/pallete_red_1"
+                android:backgroundTint="@color/pallete_red_3"
+                android:hint="Movie duration"/>
+
+            <EditText
+                android:id="@+id/et_genre_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/pallete_red_1"
+                android:backgroundTint="@color/pallete_red_3"
+                android:hint="Genre"/>
+
+            <EditText
+                android:id="@+id/et_price_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/pallete_red_1"
+                android:backgroundTint="@color/pallete_red_3"
+                android:hint="Price"/>
+
+            <EditText
+                android:id="@+id/et_description_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_text"
+                android:height="100dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:hint="Description"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/pallete_red_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tambahkan"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/pallete_red_1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="15dp"
+            android:text="Ubah"/>
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

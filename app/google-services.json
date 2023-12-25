@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "766056498503",
+    "firebase_url": "https://uas-android-9a475-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "uas-android-9a475",
+    "storage_bucket": "uas-android-9a475.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766056498503:android:24ec3ddcffb22d17c8b862",
+        "android_client_info": {
+          "package_name": "com.example.room2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpImtm_7ItvyZYz4992XnWoujHK0i3LNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766056498503:android:26a86bd6602e4eeac8b862",
+        "android_client_info": {
+          "package_name": "com.example.tiketapp_uts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpImtm_7ItvyZYz4992XnWoujHK0i3LNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766056498503:android:dd31d7cd742c9eb2c8b862",
+        "android_client_info": {
+          "package_name": "com.example.uas_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpImtm_7ItvyZYz4992XnWoujHK0i3LNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

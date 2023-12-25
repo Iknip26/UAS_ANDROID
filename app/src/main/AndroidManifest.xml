@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Room2"
+        tools:targetApi="31">
+        <activity
+            android:name=".Public_page.detailProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Public_page.filmDescription"
+            android:exported="false" />
+        <activity
+            android:name=".Public_page.publicHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.editProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.loginRegisterActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.publicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.adminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.detailFilmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.InputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.adminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.loginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.InputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
